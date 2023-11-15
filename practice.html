@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人資料</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .profile {
+            margin-top: 20px;
+        }
+
+        .profile img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        /* 新增的 CSS 樣式用於添加黑底線 */
+        .underline {
+            border-bottom: 2px solid black;
+            margin-bottom: 20px; /* 調整底線與下一個元素的間距 */
+        }
+        .colored-block {
+            background-color: #415165; /* 你可以更改顏色 */
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+        }
+        .underline2 {
+            border-bottom: 2px solid white;
+            margin-bottom: 20px; /* 調整底線與下一個元素的間距 */
+        }
+        .vertical-line {
+            border-right: 2px solid black; /* 垂直線樣式和顏色 */
+            height: 100%; /* 線的高度與父元素相同 */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 100;
+        }
+
+        /* 新增的 CSS 樣式用於工作經驗區塊 */
+        .experience-block {
+            position: relative;
+            text-align: left; /* 文字從右邊開始排列 */
+            padding-left: 20px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>我的個人資料</h1>
+    <div class="underline"></div>
+
+    <div class="profile">
+        <img src="photo.png" alt="個人照片">
+        <h2>個人資料<span style="color: red;"> profile</span></h2>
+        <div class="underline"></div>
+        <p>年齡: 你的年齡</p>
+        <p>居住地: 你的居住地</p>
+        <p>Email: 你的郵件地址</p>
+        <p>職業: 你的職業</p>
+        
+        <br>
+        <br>
+        <h2>學歷<span style="color: red;"> education</span></h2>
+        
+
+        
+        <div class="underline"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- 新增的有顏色的區塊 -->
+    <div class="colored-block">
+        <h2><p>技能 skills</p><h2>
+            <div class="underline2"></div>
+        <p>Adobe Photoshop</p>
+        <p>Adobe Illustrator</p>
+        <p>Adobe XD</p>
+        <p>C4D</p>
+        <p>Adobe Premiere</p>
+        <p>語言：中文、英文</p>   
+    </div>
+
+    <div class="profile">
+        <h2>工作經驗<span style="color: red;"> experience</span></h2>
+        <div class="underline"></div>
+        <div class="experience-block">
+            <div class="vertical-line"></div>
+            <pre><p>  年齡: 你的年齡</p></pre>
+            <pre><p>  居住地: 你的居住地</p></pre>
+            <pre><p>  Email: 你的郵件地址</p></pre>
+            <pre><p>  職業: 你的職業</p></pre>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
